@@ -1,0 +1,31 @@
+h1 a {
+	color: white;
+}
+
+#logo {
+	padding-left: 40px;
+	padding-bottom: 50px;
+	font-size: 22px;
+}
+
+.CenterText{
+	text-align: left;
+	padding-bottom: 80px;
+}
+
+
+.column {
+	float: left;
+	width: 33.33%;
+	padding: 10px;
+  }
+  
+  .row::after {
+	content: "";
+	clear: both;
+	display: table;
+  }
+
+  .Step{
+	  padding-bottom: 80px;
+  }

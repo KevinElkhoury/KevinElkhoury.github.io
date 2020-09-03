@@ -1,0 +1,321 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Project Management</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/ProjectManagement.css" />
+	</head>
+	<body class="homepage is-preload">
+			<div id="page-wrapper">
+			<!-- Header Wrapper-->
+				<div id="header-wrapper-about">
+					<div>
+						<header id="header"></header>
+							<div class="inner"></div>
+									<!-- Logo -->
+									<h1><a href="index.html" id="logo">Kevin Elkhoury</a></h1>
+								<!-- Nav -->
+									<nav id="nav">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="about.html">About Me</a></li>
+											<li class="current_page_item">
+												<a href="portfolio.html">Portfolio</a>
+												<ul>
+													<li><a href="ProjectManagement.html">Project Management</a></li>
+													<li><a href="#">Vector Graphics Software</a></li>
+													<li><a href="#">Additive Manufacturing</a>
+														<ul>
+															<li><a href="#">Keychain</a></li>
+															<li><a href="#">Planter</a></li>
+														</ul>
+													</li>
+													<li><a href="#">Subtractive Manufacturing</a></li>
+												</ul>
+											</li>
+											<li><a href="contact.html">Contact Me</a></li>
+										</ul>
+									</nav>
+							</div>
+						</header>
+					</div>
+			</div>
+	
+
+
+
+
+			<!-- Main Wrapper -->
+            <div class="wrapper style1">
+                <div class="inner">
+                    <section class="container box feature1">
+                        <div class="row">
+                        	<div class="col-12">
+                                <header class="major">
+									<h2>Project Management</h2>
+								</header>
+							</div>
+						</div>
+						<div class="Step">
+							<div class="CenterText">
+								<strong>Setting up GitHub</strong> <br>
+								The first step was to install Git Bash a windows application that emulates a bash shell with UNIX commands simmilar to those on  OSX used in terminal
+								which makes it much easier to use in comparison to CMD which is instead based on DOS and largely no longer used and replaced by a powershell
+								a complex but powerful shell tool. <br> <br>
+
+								Part of the installation for Git Bash involves selecting the default text editor to be used with the application. By default Vim is selected,
+								and though Vim is universal and found pre installed on nearly all OSs it is far form convenient requiring its own specific commands to work.
+								For this reason Notepad++ was installed and set as the deafault as an alternative, a now a days more commonly used simple text editor that is
+								both intutive enough for the new user, but powerful and effecient for the verteran programmer. <br> <br>
+
+								Following installing Git Bash and Notepad++ a Github account was made a repository was created with the name username.github.io which will activate
+								Github pages allowing the URL to be reached like a regular website would be. Very briefly on how github works, github is a cloud hosting service which
+								allows for the storing of data in different sections called repositories. Each account can create different repositories with different names and treat
+								them as a file system would with everything stored under username/"repository name". Users may then pull repositories to their local machines allowing them to work on
+								the files on the repository offline from their personal pc as well as see all the changes in the repository through its different versions. When a user is done
+								with working on the repository offline they may then use git to add the files they wish to upload, commit them, and finally push them to the cloud allowing for future users
+								to pull their work, see their changes and continue off it if they choose to.
+							</div>
+							
+							<div class="row">
+								<div class="column">
+									<img src="images/ProjectManagement/gitBash.png" style="width:100%">
+									Downloading Git Bash from git for Windows Website
+
+								</div>
+								<div class="column">
+									<img src="images/ProjectManagement/NP++.png"  style="width:100%">
+									Downloading Notepad++ to use as text editor 
+
+								</div>
+								<div class="column">
+									<img src="images/ProjectManagement/GitHub.png"  style="width:100%">
+									Making Github repository to access GitPages and host site
+								</div>
+							</div>
+						</div>
+						<div class="Step">
+							<div class="CenterText">
+								<strong>Setting up Coding Enviroment</strong> <br>
+								The following step is to choose and set up an IDE, which stands for Integrated Development Enviroment. An IDE is composed to three
+								primary tools, source code editor, a debugger, and tools to build your code. The reccomended IDE for this class was Brackets which is 
+								an IDE with built in GitHub support allowing users to view a live build of their file, but also push their work to their GitHub repository with
+								a push of a button. For most users this is ideas especially for those not familliar with how to use naviagate using a shell and how to push files
+								using a shell. However I have had plenty of experience in navigating using a shell in the past, and have been coding in multiple languages, and
+								am honestly sick and tired of downloading a new IDE for every single language that I decide to learn, so instead I have started using VSCode which
+								by itself is nothing more than a text editor, but supports a vast array of add ons to turn it into a proper IDE for any lanaguage allowing me to use
+								VS Code for everything from HTML to C++. <br> <br>
+
+								Now that I have my IDE set up for HTML I need to clone my repository from github in order to start making my website. Once I cloned my repository I need
+								to get a template for my HTML website. Here for the class we were reccomended to use some linked to us, however the problem I had with these templates
+								it that we did not actually get access to the CSS, and were expected to just fill in the HTML with the CSS being simply being stored online and accessed.
+								I instead chose to get my own HTML/CSS template with the CSS available to me, so that I could edit and alter the site as I pleased, and not just change the text.
+								This lead me to choosing two templates that I would be using one for my home page called ZeroFour and the other to organize all my projects called Phantom.
+
+							</div>
+							
+							<div class="row">
+								<div class="column">
+									<img src="images/ProjectManagement/VSCode.png" style="width:100%">
+									Using VS Code as my choice of IDE
+
+								</div>
+								<div class="column">
+									<img src="images/ProjectManagement/Git Clone.png"  style="width:100%">
+									Cloning Repository from GitHub 
+
+								</div>
+								<div class="column">
+									<img src="images/ProjectManagement/InitalTemplate.png"  style="width:100%">
+									Inital Template Zero Four
+								</div>
+							</div>
+						</div>
+
+						<div class="Step">
+							<div class="CenterText">
+								<strong>Creating the Home Page</strong> <br>
+								Once I loaded in the IDE into VS Code I was given 2 folders containing all the assets and images used as well as an index file and a CSS file to edit freely.
+								the first think I then decided to do was go into the CSS file and reposition the navigation bar. I set a negative top padding on it to move it to the top of
+								the screen and set its position to be relative. I then removed a shadow that appeared around it and its rounded edges, and changed its size a bit to look better
+								in the CSS. Then I filled out the HTML page adding the proper navigation addresses to the nav bar. I then cleaned up the header right under it,
+								changed the font size and location in CSS, removed some extra lines I disliked around it and wrote Digital Fabrigation in the middle of the header in HTML.
+								I left the header as a plain back background for now with plans to return to it later. <br> <br>
+								
+								I then moved on to cutting uneeded parts of the section in the HTML code, then filled out text to fill up the home page,
+								added some images, and linked the images to their appropriate page. However I ran into an issue here with a grainy background
+								overlaping my images causing them to look pixelated, so I found the image in my files, searched for it then in the CSS,
+								and removed its overlap section, so the images I placed were in front. Then I wrapped up the home page with filling out the footer,
+								and finalizing small text and CSS details to clean up the page and make slight size and color adjustments. <br> <br>
+
+								Finally I returned to the header and found some lines of CSS that would reference some Java Script to make the automatic slideshow for my header. 
+								I imported in the code, and spent a lot of time toying around with the CSS to change the padding and alignment to make it fit into the header properly.
+								Once it fit in I adjusted some settings with the automatic slide show in the CSS, and then simply added my images in the HTML file.
+
+							</div>
+							
+							<div class="row">
+								<div class="column">
+									<img src="images/ProjectManagement/NavBar.png" style="width:100%">
+									Moved and filled in Nav Bar and Cleaned up Header
+
+								</div>
+								<div class="column">
+									<img src="images/ProjectManagement/homeCleaned.png"  style="width:100%">
+									Cleaned the Template and Changed Background, Then Filled in Remaining Sections
+
+								</div>
+								<div class="column">
+									<img src="images/ProjectManagement/SlideShow.png"  style="width:100%">
+									Set the Header as a SlideShow
+								</div>
+							</div>
+						</div>
+
+
+						<div class="Step">
+							<div class="CenterText">
+								<strong>Creating Additional Pages</strong> <br>
+								Finally now that the home and navigation bar are finalized all that is left to do is make the additional pages. The first
+								page I made is the About Me page where I simply made an html and css file, linked the about me css file and the main css file
+								to the aboutme html file, and copied in my nav bar and footer. The nav bar did not copy in as nicely as I hoped since it
+								was taking part of the header, so to not mess up my main page I created a new class to put in the nav bar division that I then
+								defined and adjusted in the about css for the nav bar to be aligned properly. I then made two classes one for text, and the 
+								other for image and definined them both in the CSS file setting the image aligned right and text aligned left and setting them
+								both to be inline allowing them to be side by side as seen in the image below. I then wrote in the About Me text and finalized
+								my CSS adjustments with size and location then moved on to the next page. <br> <br>
+								
+								Next I made a contact me page, which in essense was inherently simple. I simply found a template for it online and imported in its
+								appropriate CSS, HTML and Java Script. I then made my own division with its own class to properly align the contact me section to
+								be in the center of the page and not overlap with the nav bar or footer that I imported from the About Me page when I first made this page.
+								All that was then left was to make a second page which the user would be brought to saying "Thank You" in the middle of the page, which
+								I did by making a CSS class, with access to a nav bar to return to the main page or any page the user wants to visit next. <br> <br>
+
+								Finally I made my portfolio page for an easy way to access each weeks project. For this I found a template called Phantom with its own
+								CSS, HTML, and Java Script Files. I simply then imported them in, and started remving all the sections except for the boxes that I was using.
+								I then implemented my own nav bar which took a lot of adjusting in the CSS needing to change its padding a lot, then simple placed the footer 
+								at the end of the HTML file. I then filled it with an image of this project and set the rest to coming soon. <br> <br>
+
+								Then once this was all done I simply used GitBash to navigate to this folder add it, commit it, and push it to my repository.
+
+
+							</div>
+							
+							<div class="row">
+								<div class="column">
+									<img src="images/ProjectManagement/aboutme.png" style="width:100%">
+									Created About Me Page
+
+								</div>
+								<div class="column">
+									<img src="images/ProjectManagement/contact.png"  style="width:100%">
+									Created Contact Me Page
+
+								</div>
+								<div class="column">
+									<img src="images/ProjectManagement/Portfolio.png"  style="width:100%">
+									Set the Header as a SlideShow
+								</div>
+							</div>
+						</div>
+
+
+					</section>
+				</div>			
+            </div>
+
+
+
+
+
+			<!-- Footer Wrapper -->
+			<div id="footer-wrapper">
+				<footer id="footer" class="container">
+					<div class="row">
+						<div class="col-3 col-6-medium col-12-small">
+
+							<!-- Links -->
+								<section>
+									<h2>Resources</h2>
+									<ul class="divided">
+										<li><a href="https://github.com/">Github</a></li>
+										<li><a href="https://www.w3schools.com/">W3Schools</a></li>
+										<li><a href="https://www.canva.com/">Canva.com</a></li>
+								</section>
+
+						</div>
+						<div class="col-3 col-6-medium col-12-small">
+
+							<!-- Links -->
+								<section>
+									<h2>More Resources</h2>
+									<ul class="divided">
+										<li><a href="https://notepad-plus-plus.org/">Notepad++</a></li>
+										<li><a href="https://www.autodesk.com/products/fusion-360/overview">Fusion 360</a></li>
+										<li><a href="https://html5up.net/">Html5up</a></li>
+									</ul>
+								</section>
+
+						</div>
+						<div class="col-6 col-12-medium imp-medium">
+
+							<!-- Contact -->
+								<section>
+									<h2>Get in touch</h2>
+									<div>
+										<div class="row">
+											<div class="col-6 col-12-small">
+												<dl class="contact">
+													
+													<dt>WWW</dt>
+													<dd><a href="kevinelkhoury.github.io">kevinelkhoury.github.io</a></dd>
+													<dt>Email</dt>
+													<dd><a href="#">elkhoury_kevin@wheatoncollege.edu</a></dd>
+													<dt>Address</dt>
+													<dd>
+														26 East Main St.<br />
+														Norton, MA 02766 <br />
+													</dd>
+													<dt>Phone</dt>
+													<dd>(508) 286-8200</dd>
+												</dl>
+											</div>
+											<div class="col-6 col-12-small">
+												<dl class="contact">
+
+												</dl>
+											</div>
+										</div>
+									</div>
+								</section>
+						</div>
+						<div class="col-12">
+							<div id="copyright">
+								<ul class="menu">
+									<li>&copy; Kevin Elkhoury. All rights reserved</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</footer>
+			</div>
+
+		</div>
+
+
+
+
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
