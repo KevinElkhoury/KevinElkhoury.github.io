@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 1575 1575" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g transform="matrix(1.33333,0,0,1.33333,0,0)">
+        <g transform="matrix(0.651735,0,0,0.651735,225.945,218.43)">
+            <path d="M575.379,302.993L628.003,459.522L798.298,459.522L660.526,556.262L713.15,712.791L575.379,616.051L437.607,712.791L490.231,556.262L352.459,459.522L522.755,459.522L575.379,302.993Z" style="fill:none;stroke:black;stroke-width:0.06px;"/>
+        </g>
+        <g transform="matrix(0.842959,0,0,0.842959,64.7791,86.1369)">
+            <text x="558.557px" y="550.608px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:22.474px;">V<tspan x="572.307px 584.806px " y="550.608px 550.608px ">ec</tspan>tor:6/100/90</text>
+            <text x="558.557px" y="573.818px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:22.474px;">Raster:40/70</text>
+        </g>
+    </g>
+</svg>
