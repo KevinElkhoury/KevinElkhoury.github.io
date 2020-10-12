@@ -48,84 +48,137 @@
 						<div class="Step">
 							<div class="CenterText">
 								<strong>What is CNC?</strong> <br>
-                            
+                            CNC standing for computer numerical control is a system that will take take in programmed instructions to automatically
+                            run a job whether it be milling, lathe, drill... and so forth. Technically 3d printers, laser engravers, vinyl cutter, and
+                            any other tool you program using a computer is a CNC machine. In order to use a CNC machine one need to take their CAD file 
+                            and import it into a CAM software which will then turn the design into machine code the machine can understand. Then you simply 
+                            using the machines controller or control panel in order to zero it and run the machine code.
+                            <br><br>
+                            The machine we are using in this project is a mill and more specifically a 3-axis mill. A mill is composed of  a few different
+                            important parts that are crucial to understand in order to use it effectively. Going through the basic parts there is the gantry
+                            which is a general term used for the portion of the mill that moves along the axis, there is then the spindle which is a motor
+                            that spins at around 18000 RPM. Connected to the spindle is the collet and collet nut which will hold the bit in place. The bit 
+                            simply being the actual tool used to make the cut. There is a vast array of available bits (that I will talk to you about buying) 
+                            more of, from endmills to drills, to surfacing tools, tapered bits and more. Next to the collet and bit and surrounding it is the 
+                            dust collector connected to a vaccum to keep wood and other material dust from flying everywhere. Finally the last thing to discuss 
+                            is the axis. The axis are the direction the spindle can move in (NOT THE GANTRY). Our CNC mill is 3 axis, and so can move in the 
+                            x,y, and z directions allowing it to do 2 axis, 2.5 axis, and 3 axis milling operations.  In the other room we have a 5-axis mill
+                            meaning that the spindle can now be angled in diagonal directions allowing for more complex cuts. 
 							</div>
 							
 							<div class="row">
 								<div class="column">
-									<img src="images/Planter/circPattern.png" style="width:100%">
-									Circular Pattern
+									<img src="images/IntroCNC/aboutCNC/3axis.png" style="width:100%">
+									3 Axis Mill
 
 								</div>
 								<div class="column">
-									<img src="images/Planter/fillet.png"  style="width:100%">
-									Fillet Tool
+									<img src="images/IntroCNC/aboutCNC/5axis.png"  style="width:100%">
+									5 Axis Mill
 
 								</div>
 								<div class="column">
-									<img src="images/Planter/shell.png"  style="width:100%">
-									Shell Tool
+									<img src="images/IntroCNC/aboutCNC/partsMill.png"  style="width:100%">
+									Anatomy of a Mill
                                 </div>
                                 <br> <br> <br>
                                 <div class="row">
                                     <div class="column">
-                                        <img src="images/Planter/horizPlane.png" style="width:100%">
-                                        Horizontal Offset Plane
+                                        <img src="images/IntroCNC/aboutCNC/bits.png" style="width:100%">
+                                        Endmill Bits
     
                                     </div>
                                     <div class="column">
-                                        <img src="images/Planter/tangentPlane.png"  style="width:100%">
-                                        Tangential Offset Plane
+                                        <img src="images/IntroCNC/aboutCNC/dustcollector.png"  style="width:100%">
+                                        Dust Collector
     
                                     </div>
                                     <div class="column">
-                                        <img src="images/Planter/definedSketch.png"  style="width:100%">
-                                        Fully Defined Sketch
+                                        <img src="images/IntroCNC/aboutCNC/controller.png"  style="width:100%">
+                                        CNC Mill Controller
                                     </div>
                                 </div>
 							</div>
 						</div>
 						<div class="Step">
 							<div class="CenterText">
-								<strong>Making a Vase in Fusion 360</strong> <br>
-                                Making the vase itself was a very simple task to do. Started off by making an initial base circle then adding a second circle near
-                                the edge. The trim tool was then used to cut the circle to the intescetion point wioth the larger cirle. The circular pattern tool
-                                was then used to repeat the trimmed circle arround the large base circle. Following then the design was extruded upwards. This was
-                                then saves as an STL to be used in prusa slicer to turn into vase mode. Continuing on Fusion 360 though I then shelled the vase clicking on
-                                the top profile to hollow out the vase and remove the top. Then I filleted the top edge to smooth it out, making the final vase.
+								<strong>Learning to use the 3 Axis Mill with V-Carve</strong> <br>
+                               I wish to preface this with Spencer was amazing, he was a wonderful teacher, and great at explaining about the mill and was 
+                               clearly talented in the field, however not even the smartest person can convince me that V-Carve is not an awful software. From 
+                               the terrible UI and excuse for a CAD software that makes me consider Blender as a better option, to the lack of options and no simulation
+                               or collision detection CAM section. Using the glorified MS pain "CAD" tool I made myself a few shaped to get familliar with the software.
+                               Then talked through a plan where I would make two squares one to shell and the other to cut, and I would then add two different things on 
+                               each of the squares to be engraved. So the idea would be to engrave the square to be cut out, cut the square, shell the other square, then
+                               take the cut square and put it into the shell in the opposite direction. Then I would re-zero the tool and cut the engrave that was on 
+                               top of the shell which would get a two faced operation on the piece of wood that was cut out.
+                               <br> <br>
+                               Getting started in doing this I made the two squares then added a star and my name on one square and a pentagon on top of the other. I 
+                               then switched to the CAM section and selected the engrave operation, decided to use a V-bit and inputted the provided parameters by Spencer.
+                               Then I selected the pentagon, selected the shell operation, and used a 1/4 inch endmill downcut as the tool of choice. Then I selected the 
+                               square to be cut out, selected the contour operation (this is the name in Fusion I forgot what it was in V-Carve), selected a 1/4 inch
+                               endmill as the tool of choice, and added 4 tabs around the piece so it would not move. Finally I selected the last square, selected the 
+                               shell operation using a 1/4 inch downcut endmill again, and added t-bones to the corned to allow the other square to slot it easier. I 
+                               then numbered each of the operations in the order initally described, and put them on a USB key.
 							</div>
 							
 							<div class="row">
 								<div class="column">
-									<img src="images/Planter/startCircle.png" style="width:100%">
-									Using VS Code as my choice of IDE
+									<img src="images/IntroCNC/learnCNC/initalShapes.png" style="width:100%">
+									Using Paint I mean V-Carve to make Shapes
 
 								</div>
 								<div class="column">
-									<img src="images/Planter/vaseSketch.png"  style="width:100%">
-									Cloning Repository from GitHub 
+									<img src="images/IntroCNC/learnCNC/millingOperation.png"  style="width:100%">
+									Editting Milling Operation for Contour Cut with Tabs
 
 								</div>
 								<div class="column">
-									<img src="images/Planter/ExtrudeVase.png"  style="width:100%">
-									Extruding the Vase
+									<img src="images/IntroCNC/learnCNC/simulate.png"  style="width:100%">
+									"Simulating" Operation
+                                </div>
+                            </div>
+                            <br>
+                            <div class="CenterText">
+                               First thing to do was then turn on the machine and move the gantry out of the way. Then we got a piece of stock, used
+                               carpet tape on the bottom, and secured it will a drill and screws to the table. Then used the controller to set the X and
+                               Y Zero point. Next we removed the dust collector, and used a pair of wrenches to remove the collet nut and take out the collet.
+                               We then put into the cullet a V-Bit and resecured the collet with the collet nut. Then using a calibration tool we set the Z to
+                               zero at our stock. Then I reattached the dust collector and ran the first engrave operation. I then changed the tool to a 1/4 inch
+                               end mill and ran the cut and shell operation. Using a cutting tool I removed the tabs and put the cut out square in the shell.
+                               I then reused the zero tool to zero the z to the stock that is now in the shell and ran the final shell operation to get hte final 
+                               product.
+							</div>
+                            <div class="row">
+								<div class="column">
+									<img src="images/IntroCNC/learnCNC/stock.png" style="width:100%">
+									Attaching Stock to Table
+
+								</div>
+								<div class="column">
+									<img src="images/IntroCNC/learnCNC/colletWrench.png"  style="width:100%">
+									Removing Collet Nut
+
+								</div>
+								<div class="column">
+									<img src="images/IntroCNC/learnCNC/vBit.png"  style="width:100%">
+									Putting V-Bit in Collet
                                 </div>
                             </div>
                             <br> <br> <br>
                             <div class="row">
 								<div class="column">
-									<img src="images/Planter/shellVase.png" style="width:100%">
-									Shell Tool
+									<img src="images/IntroCNC/learnCNC/zeroTool.png" style="width:100%">
+									Zero Z Axis
 
 								</div>
 								<div class="column">
-									<img src="images/Planter/FilletVase.png"  style="width:100%">
-									Fillet Tool
+									<img src="images/IntroCNC/learnCNC/side1.png"  style="width:100%">
+									Frontside of Project
 
 								</div>
 								<div class="column">
-									<img src="images/Planter/Vase.png"  style="width:100%">
-									Completed Vase
+									<img src="images/IntroCNC/learnCNC/side2.png"  style="width:100%">
+									Backside of Project
                                 </div>
                             </div>
                             
@@ -133,117 +186,120 @@
 
 						<div class="Step">
 							<div class="CenterText">
-								<strong>Vase Mode in Prusa Slicer</strong> <br>
-                                Taking the file exported from Fusion 360 was then imported into Prusa Slicer. No supports or  brim is needed fro the print, and
-                                prusa Slicer and Fusion both work in mm, so no values have to be changed when importing. That means all that was left to do was 
-                                activate vase mode, slice the model, export the gCode and print it. I did this with ocotoprint since I was lazy and did not want to
-                                get off the couch. 
-
+								<strong>Design Project for CNC</strong> <br>
+                                For my CNC project I decided to do 3 things, and am hoping to make a collection soon of them. I designed the other project
+                                available from the first week of Fusion 360, so the biological hazard symbol which can be CNC milled, and I also implemented
+                                toolpaths for both the radioactive symbol and the chemical symbol in Fusion 360. Now designing just a single of these symbols
+                                without a guide I would consider a creative design as it requires you to come up with your own ideas on how to define the shaped 
+                                and how you can relate everyhting geometrically in Fusion to get a fully defined sketch, and considering there is an infinite amount
+                                of ways to do this then an idea to come up with making these designs is inherently creative, as I am sure you would agree that not
+                                only art and design requires a creative mind, but creativity plays a crucial role in both mathematics and geometry. And due to
+                                the lack of description on how creativity is graded in your rubric I am assuming that you would be welcoming of geometric creativity
+                                and weight it equally to artistic creativity.
+                                <br> <br>
+                                Starting with creating the Biohazard symbol the way I made it was by initally making the base like the other symbols,
+                                and extruding it upwards. Then I proceeded to make a sketch on top of the base. What I creatively realized was the the 
+                                three large circles intersect in the middle, so started by making that, then had the creative idea of connecting three 
+                                circles with an equlateral triangle. to make the circles equally spaced apart. I then added a horizontal constraint
+                                to the bottom side of the triangle, and made all the circles equal size. Then with this basis the rest turned easy.
+                                I then made the center circle, and offset outer circle. The following steps I approached creatively due to not
+                                having a plan beforehand, and made a then made anoter circle centered at the origin the would be coincident with
+                                the three outer circles where the outcircles interect making a 3 way intersection point. Then within the top circle
+                                I added two smaller circles inside that were tangential both of which connected to the origin with different length
+                                lines. I repeated this on all the other curecles with the same dimensions set up, and made a few connecting parallel
+                                lines to get the final sketch. I then extruded, and added an appearence to get the end result. A 2d thing that I CNC 
+                                cut that I made creatively.
 							</div>
 							
 							<div class="row">
 								<div class="column">
-									<img src="images/Planter/exportFusion.png" style="width:100%">
-									Exporting from Fusion 360
+									<img src="images/IntroCNC/projectCNC/bio/1initalBio.png" style="width:100%">
+									Inital Sketch
 
 								</div>
 								<div class="column">
-									<img src="images/Planter/importPrusa.png"  style="width:100%">
-									Importing into Prusa Slicer
+									<img src="images/IntroCNC/projectCNC/bio/2coincCircle.png"  style="width:100%">
+									Adding Coincident Circle
 
 								</div>
 								<div class="column">
-									<img src="images/Planter/vasePrusa.png"  style="width:100%">
-									Vase Mode Prusa Slicer
+									<img src="images/IntroCNC/projectCNC/bio/3Capture.PNG"  style="width:100%">
+									Final Sketch
 								</div>
                             </div>
                             <br><br><br>
                             <div class="row">
 								<div class="column">
-									<img src="images/Planter/slicerVase.png" style="width:100%">
-									Sliced Vase in Prusa Slicer
+									<img src="images/IntroCNC/projectCNC/bio/4extruding.png" style="width:100%">
+									Extruding Symbol
 
 								</div>
 								<div class="column">
-									<img src="images/Planter/gCode.png"  style="width:100%">
-									Exporting Print from Slicer
+									<img src="images/IntroCNC/projectCNC/bio/5extruded.png"  style="width:100%">
+									Extruded Symbol
 
 								</div>
 								<div class="column">
-									<img src="images/Planter/finalVase.png"  style="width:100%">
-									Completed and Printed Vase
+									<img src="images/IntroCNC/projectCNC/bio/6final.png"  style="width:100%">
+									Final Biohazard Symbol
 								</div>
                             </div>
-                            
 
 						</div>
 
 
 						<div class="Step">
 							<div class="CenterText">
-								<strong>Making a Watering Can</strong> <br>
-							To make the watering can various different tools had to be used. Starting off an initial base was made and extruded to make the container
-							portion of the watering can. Following that a tangetial plane was made to the cylinder, and a following offset plane at an angle was then made
-							using that tangential plane. Using the plane at an agnle the spot, a circle, was extruded in both directions both towards and away from the can
-							to make the spout. A parralel offset plane to the spout was then made for the rose. The spout was then loftwed to another profile on the roses plane
-							to make the rose. The whole thing was then shelled, and then using circular pattern tool holes for the rose for the water to come out of were made.
-							Finally the edge was filleted, and then the watering can was complete.
+								<strong>CNC Project Goal</strong> <br>
+                            What I am hoping to be able to do is make a variety of symbols that I can mill out easily and constantly that I can then
+                            sell off as either decoration, coasters, and other needs. Plus I just really like them. I am starting with being able 
+                            to mill just these three logos, but then hope to be able to make superhero logos like spiderman and Deadpool and other
+                            circular things in simmilar fasion. As so I kept being creative and learned more in toolpaths in Fusion and made
+                            a radioactive symbol and chemical symbol and milled them. Unfortunatley I forgot to take a photo of the chemical one since 
+                            I did it to train Lily (extra creative I know 2 in 1) and gave it to her as she wanted to hang it in her room. (see my creative
+                            idea exists and has oppertunity). For the radioactive symbol I did a pocket to clear the middle and a contour to cut it 
+                            out with a 1/4 inch endmill but that did not leave a clean cut. In the chemical symbol I changed tactics creatively and 
+                            decided to try out a tapered bit with a finishing contour for the middle parts, bu the tapered bit caused it to cut 
+                            jagged. Now I want to ask you to buy for us an 1/8 inch endmill to use so we can try that for more precise cuts. 
 
 
 							</div>
 							
 							<div class="row">
 								<div class="column">
-									<img src="images/Planter/canBase.png" style="width:100%">
-									Container Portion of watering Can
+									<img src="images/IntroCNC/projectCNC/CNC/1pocketRadio.png" style="width:100%">
+									Pocket Cut for Radioactive Symbol
 
 								</div>
 								<div class="column">
-									<img src="images/Planter/anglePlane.png"  style="width:100%">
-									Making Offset Plant for Spout
+									<img src="images/IntroCNC/projectCNC/CNC/2contourradio.png"  style="width:100%">
+									Contour Cut for Radioactive Symbol
 
 								</div>
 								<div class="column">
-									<img src="images/Planter/spout.png"  style="width:100%">
-									Used Template for Portfolio Page
+									<img src="images/IntroCNC/projectCNC/CNC/3cutRadio.png"  style="width:100%">
+									Milled Radioactive Symbol
 								</div>
 							</div>
 							<br><br><br>
 							<div class="row">
 								<div class="column">
-									<img src="images/Planter/rosePlane.png" style="width:100%">
-									Rose offset Plane
+									<img src="images/IntroCNC/projectCNC/CNC/4pocketchem.png" style="width:100%">
+									Pocket Cut Chemical Symbol
 
 								</div>
 								<div class="column">
-									<img src="images/Planter/roseLoft.png"  style="width:100%">
-									Loft Tool to Make Rose
+									<img src="images/IntroCNC/projectCNC/CNC/6finishchem.png"  style="width:100%">
+									Finishing Cut Chemical Symbol (inner contour)
 
 								</div>
 								<div class="column">
-									<img src="images/Planter/shellCan.png"  style="width:100%">
-									Shell the Watering Can
-								</div>
-							</div>
-							<br><br><br>
-							<div class="row">
-								<div class="column">
-									<img src="images/Planter/circlePatternCan.png" style="width:100%">
-									Rose Circular Pattern Tool
-
-								</div>
-								<div class="column">
-									<img src="images/Planter/filletCan.png"  style="width:100%">
-									Fillet Watering Can
-
-								</div>
-								<div class="column">
-									<img src="images/Planter/wateringCan.png"  style="width:100%">
-									Finished Watering Can
+									<img src="images/IntroCNC/projectCNC/CNC/5contourchem.png"  style="width:100%">
+									Contour Cut Chemical Symbol
 								</div>
 							</div>
 						</div>
-						<a  href="Linked Files/Planter and Watering Can.zip" download="Planter SVGs">Click Here</a> to Download all the files in for this project!
+						<a  href="Linked Files/Intro to CNC.zip" download="Intro to CNC Files">Click Here</a> to Download all the files in for this project!
 
 					</section>
 				</div>			
